@@ -49,7 +49,7 @@ def logout_view(request):
 
 @login_required
 def profile_update(request):
-    if not request.user.has_perm('some_permission'):
+    if not request.user.is_authenticated:
         return render(request,"profile_app/403.html")
     # Your view logic here
      
