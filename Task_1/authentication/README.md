@@ -25,6 +25,8 @@ The `profile_app` is deployed and accessible online. You can test the website wi
 - **Username**: `test`
 - **Password**: `test@123`
 
+Visit the deployed application here: [Profile App](https://user-authentication-app-xzcg.onrender.com)
+
 ## Installation and Setup
 
 To run the project on your local server, follow these steps:
