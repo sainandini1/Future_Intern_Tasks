@@ -1,0 +1,44 @@
+{% include "./shared/base.html"%}
+{%block title%}
+
+<title>Welcome</title>
+
+{%endblock%}
+{%load static%}
+{%block links%}
+<link rel="stylesheet" href="{% static "styles/profile_app/index.css"%}">
+
+{%endblock%}
+
+{%block content%}
+
+{%include "./shared/header.html" %}
+
+
+<section class="greet-box">
+    {%if user.is_authenticated %}
+    
+    <section class="usergreeting">
+        {% if user.profile.name %}
+        <h1> Hello {{user.profile.name}}!</h1>
+        <h1>Welcome to the Website</h1>
+        {%else%}
+        <h1>Welcome <span>{{user.username}}</span></h1>
+        <p><a href="{%url "profileform"%}">Please Update Your Profile !</a></p>
+    
+        {%endif%}
+    
+    </section>
+    
+    {%else%}
+    <section class="greeting">
+    <h1>Hello ,User !</h1>
+    <p id="please">Please Log in to access more features !</p>
+    <ul>
+       <li>Click Here to <a href="{%url "login"%}">Login</a>/ <a href="{%url "register" %}">register</a> </li>
+    </ul>
+    </section>
+    {%endif%}
+</section>
+
+{%endblock%}
