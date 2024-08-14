@@ -1,0 +1,36 @@
+{% include "./shared/base.html" %}
+{%load static%}
+{%block links%}
+<link rel="stylesheet" href="{%static "styles/profile_app/login.css"%}">
+{%endblock%}
+
+{%block content%}
+
+{%include "./shared/header.html" %}
+<div class="section">
+    <div class="login">
+    
+        <form method="POST" action = "{% url "login" %}">
+            {% csrf_token %}
+            {%if error%}
+           <p id="error">{{error}}</p>
+        {%endif%}
+            <ul>
+                <li>
+                    <p>{{form.username.label_tag}}</p>
+                    <p>{{form.username}}</p>
+    
+                </li>
+                <li>
+                    <p>{{form.password.label_tag}}</p>
+                    <p>{{form.password}}</p>
+    
+                </li>
+                </li>
+            </ul>
+            <button type="submit">Login</button>
+        </form>
+    </div>
+</div>
+
+{%endblock%}

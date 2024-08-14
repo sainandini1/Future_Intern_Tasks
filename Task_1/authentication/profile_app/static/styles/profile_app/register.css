@@ -1,0 +1,112 @@
+
+.section{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.register{
+   
+    align-items:center;
+    justify-content: center;
+}
+
+.register h1 {
+    color: #000000;
+    margin-bottom: 30px;
+    font-size:2rem;
+    text-align: center;
+}
+
+.register form {
+ 
+    background: rgba(28, 28, 28, 0.95);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    width: 360px;
+    border: 1px solid #444;
+}
+
+.register form ul {
+    list-style: none;
+    padding: 0;
+}
+.register form h1{
+    color:rgb(136, 116, 185);
+}
+
+.register form li {
+    list-style-type:none;
+    margin-bottom: 20px;
+}
+
+.register form p {
+    margin: 0;
+    font-size: 15px;
+    color: #e0e0e0;
+}
+
+.register form button {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s ease, transform 0.2s ease;
+    width: 100%;
+}
+
+.register form button:hover {
+    background: #0056b3;
+    transform: scale(1.05);
+}
+
+/* Label and Input Styles */
+.register form label {
+    
+    margin-bottom:1rem;
+    display: block;
+    font-size:1.5rem;
+    color: #fcfcfc;
+}
+
+.register form input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #555;
+    border-radius: 8px;
+    background: #333;
+    color: #e0e0e0;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+.register form input:focus {
+    border-color: #007bff;
+    outline: none;
+    background: #444;
+}
+
+/* Error Message Styles */
+.register .errorlist {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0;
+}
+
+.register .errorlist li {
+    color: #ff6b6b;
+    background: #3e3e3e;
+    padding: 8px;
+    border: 1px solid #ff6b6b;
+    border-radius: 8px;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+.register form li ul li{
+    list-style-type: none;
+}
