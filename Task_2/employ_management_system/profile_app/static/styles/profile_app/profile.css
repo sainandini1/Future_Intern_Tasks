@@ -1,0 +1,108 @@
+
+.section{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.profile-card {
+    background: #1e1e1e;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+    width: 400px;
+    max-width: 100%;
+    overflow: hidden;
+    text-align: center;
+    color: #e0e0e0;
+    margin-top:5rem;
+}
+
+.profile-photo {
+    background: #333;
+    padding: 25px;
+   
+}
+
+.profile-photo img {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 6px solid #444;
+    object-fit:cover;
+}
+
+.profile-details {
+    padding: 20px;
+}
+
+.profile-details h2 {
+    margin: 15px 0;
+    font-size: 26px;
+    color: #ffffff;
+}
+
+.profile-details p {
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+.profile-details p strong {
+    color: #b0b0b0;
+}
+
+/* Edit Button Styles */
+.action-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px; /* Space between buttons */
+    margin-top: 20px;
+}
+
+.edit-button, .delete-button {
+    border: none;
+    padding: 10px 15px;
+    border-radius: 8px;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.edit-button {
+    background: #4c6b92;
+    color: white;
+    width:7rem;
+    text-decoration: none; /* Remove underline from link */
+}
+
+.edit-button:hover {
+    background: #0056b3;
+    transform: scale(1.05);
+}
+
+.edit-icon {
+    margin-right: 8px;
+}
+
+.delete-form {
+    display: inline; /* Ensure the form does not break the flex layout */
+}
+
+.delete-button {
+    background: #720e18;
+    color: white;
+    text-align: center;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.delete-button:hover {
+    background: #c82333;
+    transform: scale(1.05);
+}

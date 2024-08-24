@@ -1,0 +1,23 @@
+<section class="header">
+<ul>
+    
+     <li><a class="nav-link active" aria-current="page" href="{%url "home"%}">Home</a></li>
+     {%if user.is_authenticated%}
+    
+     <li><a class="nav-link" href="{%url "profile" %}">Profile</a></li>
+    <li>  
+         <form method="POST" action="{%url 'logout'%}">
+         {% csrf_token %}
+        <button type="submit" id="logout">Logout</button>
+        </form>
+    </li>
+    {%else%}
+    <li><a class="nav-link" href="{%url "login" %}">Login</a></li>
+     <li><a class="nav-link" href="{% url "register" %}">Register</a></li>
+     <li><a class="nav-link" href="{% url "admin:index" %}">Admin_login</a></li>
+
+    {%endif%}
+
+    </ul>
+
+</section>
