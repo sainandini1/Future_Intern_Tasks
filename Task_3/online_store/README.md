@@ -1,7 +1,7 @@
 
 - **Username**: `test`
 - **Password**: `test@1234`
-- ** 
+ 
 
 ## Installation and Setup
 
@@ -10,8 +10,8 @@ To run the project on your local server, follow these steps:
 1. **Clone the Repository**
 
    ```bash
-   git clone "------------------"
-   cd online_store
+   git clone "https://github.com/sainandini1/Future_Intern_Tasks.git"
+   cd Task_3/online_store
    ```
 
 2. **Install Dependencies**
