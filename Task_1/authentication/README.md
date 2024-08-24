@@ -34,7 +34,7 @@ To run the project on your local server, follow these steps:
 1. **Clone the Repository**
 
    ```bash
-   git clone https://github.com/yourusername/profile_app.git
+   git clone  https://github.com/sainandini1/Future_Intern_Tasks.git
    cd profile_app
    ```
 
