@@ -9,8 +9,8 @@ To run the project on your local server, follow these steps:
 1. **Clone the Repository**
 
    ```bash
-   git clone https://github.com/yourusername/profile_app.git
-   cd profile_app
+   git clone https://github.com/sainandini1/Future_Intern_Tasks.git
+   cd Task_2/employ_management_system
    ```
 
 2. **Install Dependencies**
